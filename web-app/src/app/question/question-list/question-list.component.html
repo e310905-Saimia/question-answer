@@ -1,0 +1,19 @@
+<h2>My Questions</h2>
+<ul class="questions">
+  <li *ngFor="let question of questions" (click)="onSelect(question)">
+    <span class="badge">{{question.id}}</span> {{question.title}}
+  </li>
+</ul>
+
+<div *ngIf="selectedQuestion">
+
+  <h2>{{selectedQuestion.title | uppercase}} Details</h2>
+  <div><span>id: </span>{{selectedQuestion.id}}</div>
+  <div>
+    <label>Title:
+      <input value="selectedQuestion.title" placeholder="Halle luja"/>
+    </label>
+  </div>
+
+
+</div>

@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  X <mat-slider class="example-margin"></mat-slider> X
+
+  <mat-slider
+    class="example-margin"
+    [disabled]="disabled"
+    [invert]="invert"
+    [max]="max"
+    [min]="min"
+    [step]="step"
+    [thumbLabel]="thumbLabel"
+    [displayWith]="formatLabel"
+    [tickInterval]="tickInterval"
+    [(ngModel)]="value"
+    [vertical]="vertical"
+  (click)="GetValue()">
+
+
+  </mat-slider>
