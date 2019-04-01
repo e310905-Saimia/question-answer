@@ -29,4 +29,5 @@ export class AppComponent {
     this.tickInterval = coerceNumberProperty(value);
   }
   private tickInterval = 1;
+
 }
